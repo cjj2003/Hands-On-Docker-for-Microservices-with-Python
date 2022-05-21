@@ -68,7 +68,7 @@ jobs:
         on:
           tags: True
 
-  - stage: push db
+    - stage: push db
       script:
       - cd Chapter04
       - docker-compose build db
