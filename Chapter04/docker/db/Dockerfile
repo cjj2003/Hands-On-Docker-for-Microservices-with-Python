@@ -47,6 +47,8 @@ ADD ./docker/db/* /opt/code/db/
 
 ## get the db ready
 RUN ["chmod", "+x", "/opt/code/db/prepare_db.sh"]
+RUN ["chmod", "+x", "/opt/code/db/start_postgres.sh"]
+RUN ["chmod", "+x", "/opt/code/db/stop_postgres.sh"]
 RUN /opt/code/db/prepare_db.sh
 
 # Start the database in normal operation
