@@ -45,7 +45,7 @@ jobs:
       - provider: script
         script: docker push dockercjj2003/users-backend:$TRAVIS_BRANCH
         on:
-          branch: main        
+          branch: latest        
       - provider: script
         script: docker push dockercjj2003/users-backend:$TRAVIS_TAG
         on:
@@ -62,7 +62,7 @@ jobs:
       - provider: script
         script: docker push dockercjj2003/users-backend:$TRAVIS_BRANCH
         on:
-          branch: main       
+          branch: latest       
       - provider: script
         script: docker push dockercjj2003/users-backend:$TRAVIS_TAG
         on:
@@ -79,7 +79,7 @@ jobs:
       - provider: script
         script: docker push dockercjj2003/users-db:$TRAVIS_BRANCH
         on:
-          branch: main        
+          branch: latest        
       - provider: script
         script: docker push dockercjj2003/users-db:$TRAVIS_TAG
         on:
